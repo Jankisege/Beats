@@ -1,0 +1,20 @@
+.button {
+  font-size: rem(16px);
+  font-weight: bold;
+  padding: rem(18px) rem(41px);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  background: #E01F3D;
+  color: white;
+  border: none;
+}
+
+.button--theme-transparent {
+  background: transparent;
+  color: white;
+  font-size: rem(16px);
+  font-weight: 400;
+  text-transform: none;
+  
+}

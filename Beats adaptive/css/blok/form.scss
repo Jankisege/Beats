@@ -1,0 +1,109 @@
+.form{
+  display: flex;
+  
+}
+
+.form__col{
+  flex: 1;
+  margin-right:rem(20px);
+  width: 100%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: rem(14px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__block {
+  flex: 1;
+  margin-right: rem(16px);
+  
+
+
+  &:last-child {
+    margin-right: 0;
+
+  }
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  padding: rem(18px) rem(12px);
+  border: rem(3px) solid transparent;
+  border-radius: rem(4px);
+
+  &--textarea{
+    height: rem(158px);
+    resize: none;
+    margin-bottom: rem(22px);
+  }
+
+  &:focus {
+    border-color: #E01F3D;
+    outline: none;
+    border-radius: rem(4px);
+  }
+}
+
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__controls {
+  margin-bottom: 16px;
+}
+.form__controls:last-child{
+  margin-bottom: 0px;
+}
+
+.section__title-mod {
+  margin-bottom: rem(61px);
+}
+
+.order-section {
+  background: url(../img/fon.png) no-repeat center;
+  height: 100vh;
+  min-height: rem(650px);
+  width: 100%;
+  background-size: cover;
+}
+
+.section__title-mod {
+  color: white;
+}
+
+.form__title{
+  color: white;
+  font-weight: normal;
+  font-size: rem(16px);
+  margin-bottom: rem(6px);
+}
+
+.radio {
+  margin-bottom: rem(16px);
+  margin-right: rem(16px);
+}
+
+.radio__visible {
+  margin-right: rem(10px);
+}
+
+.radio__title {
+  color: white;
+  
+}
+
+.form__button {
+  margin-top: rem(44px);
+}

@@ -1,0 +1,29 @@
+$containerWidth: 915px;
+$baseFontSize: 16px;
+
+$z-fixed-menu: 100;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
+
+@import "base.scss";
+@import "blok/header.scss";
+@import "blok/hero.scss";
+@import "blok/features.scss";
+@import "blok/feature.scss";
+@import "blok/button.scss";
+@import "blok/section.scss";
+@import "blok/benefits.scss";
+@import "blok/benefit.scss";
+@import "blok/benefits-section.scss";
+@import "blok/reviews.scss";
+@import "blok/interactive__avatar.scss";
+@import "blok/form.scss";
+@import "blok/radio.scss";
+@import "blok/fixed-menu.scss";
+@import "media.scss";
+@import "blok/hamburger.scss";

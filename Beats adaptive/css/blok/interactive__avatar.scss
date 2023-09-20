@@ -1,0 +1,40 @@
+.interactive__avatar {
+  width: rem(74px);
+  height: rem(74px);
+  border: rem(4px) solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  &--active {
+    border-color: #E01F3D;
+  }
+} 
+
+.interactive__avatar-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.interactive__avatar-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(15px);
+}
+
+.reviews__switcher-item {
+  margin-right: rem(6px);
+  &:last-child {
+    margin-right: 0;
+  }
+}

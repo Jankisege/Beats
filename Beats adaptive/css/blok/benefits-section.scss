@@ -1,0 +1,18 @@
+.benefits-section{
+  position: relative;
+   &:before {
+    content: url(/img/Rectangle\ 14.png) ;
+    position: absolute;
+    bottom: rem(-80px);
+    left: 0;
+
+   }
+}
+
+.benefits-section {
+  background: #FFFFFF;
+  height: 100vh;
+  min-height: rem(650px);
+  width: 100%;
+  
+}

@@ -1,0 +1,28 @@
+.section {
+  height: 100vh;
+  min-height: rem(650px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #FFFFFF;
+}
+
+.section__title {
+  font-size: rem(48px);
+  font-weight: bold;
+  text-align: center;
+  color: #292929;
+  text-transform: uppercase;
+}
+
+.headline__subtitle{
+  font-size: rem(16px);
+  font-weight: 400;
+  color: #666666;
+  text-align: center;
+  padding: 0 18% rem(62px);
+}
+
+.section__title {
+  margin-bottom: rem(18px);
+}
