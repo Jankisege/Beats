@@ -11,6 +11,7 @@ $phones: 480px;
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
 
 @import "base.scss";
+@import "media.scss";
 @import "blok/header.scss";
 @import "blok/hero.scss";
 @import "blok/features.scss";
@@ -25,5 +26,4 @@ $phones: 480px;
 @import "blok/form.scss";
 @import "blok/radio.scss";
 @import "blok/fixed-menu.scss";
-@import "media.scss";
 @import "blok/hamburger.scss";
