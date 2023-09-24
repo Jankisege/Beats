@@ -21,6 +21,10 @@
   color: #666666;
   text-align: center;
   padding: 0 18% rem(62px);
+
+  @include phones {
+    padding: 0 5%;
+  }
 }
 
 .section__title {

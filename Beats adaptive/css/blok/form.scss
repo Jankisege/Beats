@@ -1,6 +1,15 @@
 .form{
   display: flex;
   
+
+  @include tablets {
+    flex-direction: column;
+    padding: 0 10%;
+  }
+
+  @include phones {
+    padding: 0;
+   }
 }
 
 .form__col{
@@ -11,6 +20,10 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include tablets {
+    margin-right: 0;
+   }
 }
 
 .form__row {
@@ -58,12 +71,18 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  
+  @include phones {
+    justify-content: center;
+   }
 }
 
 .form__controls {
   margin-bottom: 16px;
 }
-.form__controls:last-child{
+
+
+.form__last {
   margin-bottom: 0;
 }
 
@@ -106,4 +125,9 @@
 
 .form__button {
   margin-top: rem(44px);
+  
+  @include tablets{
+    display: flex;
+    justify-content: center;
+  }
 }

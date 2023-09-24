@@ -3,6 +3,8 @@
   padding: rem(42px) rem(42px);
   overflow: hidden;
   position: relative;
+
+  
   
   &:before {
   content: "";
@@ -20,12 +22,24 @@
 
 .reviews__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews__avatar{
   width: rem(254px) ;
   height: rem(264px);
+
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+  }
 }
+
 
 .reviews__avatar-img {
   object-fit: cover;

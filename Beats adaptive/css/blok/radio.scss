@@ -1,6 +1,14 @@
 .radio {
   display: flex;
   cursor: pointer;
+  margin-bottom: 0px;
+  & :last-child {
+    margin-right: 0; 
+  }
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 
   &--checkbox {
     .radio__visible {
@@ -13,13 +21,6 @@
   }
 }
 
-.radio:last-child {
-  margin-right: 0; 
-}
-
-.radio {
-  margin-bottom: 0px ;
-}
 
 .radio__elem{
   display: none;

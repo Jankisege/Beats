@@ -1,7 +1,7 @@
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+   justify-content: space-between;
 }
 
 .phone-number.header__phone-number {
@@ -14,6 +14,8 @@ header {
   @include tablets {
     display: none;
   }
+
+  margin: 0 30px;
 }
 
 .menu__list {
@@ -22,13 +24,16 @@ header {
   font-family: 'Alegreya Sans', sans-serif; 
   font-size: rem(18px);
   font-weight: 400;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu__link{
   text-decoration: none;
+  white-space: nowrap;
 }
 
-.menu__item {
+.menu__item {  
   margin-right: rem(27px);
 
   &:last-child {
@@ -47,4 +52,9 @@ header {
   width: rem(14px);
   height: rem(14px);
   margin-right: rem(6px);
+  flex-shrink: 0;
+}
+
+.phone-number__text {
+  white-space: nowrap;
 }

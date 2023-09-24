@@ -38,7 +38,11 @@
   margin-bottom: rem(36px);
 
   @include tablets {
-    padding: 0  30%;
+    padding: 0  20%;
+  }
+
+  @include phones {
+    padding: 0  16%;
   }
 }
 
@@ -55,7 +59,11 @@
     text-align: center;
 
     &:before {
-      content: url(../img/Ellipse.png);
+      content: "";
+      width: rem(323px);
+      height: rem(323px);
+      background: url(../img/Ellipse.png) center center / contain no-repeat;
+      
     }
   }
 }
