@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  background: url(../img/Ellipse.png) no-repeat right;
+  background: url(../img/Ellipse\ 5\ \(1\).png) no-repeat right;
   padding: rem(24px) rem(0px) rem(48px);
   
   @include tablets {
@@ -29,6 +29,10 @@
   line-height: 1.1;
   margin-bottom: rem(22px);
   text-transform: uppercase;
+
+  @include tablets {
+    margin-top: 64px;
+  }
 }
 
 .hero__description-title{
@@ -62,7 +66,7 @@
       content: "";
       width: rem(323px);
       height: rem(323px);
-      background: url(../img/Ellipse.png) center center / contain no-repeat;
+      background: url(../img/Ellipse\ 5\ \(1\).png) center center / contain no-repeat;
       
     }
   }

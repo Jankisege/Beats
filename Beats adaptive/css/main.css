@@ -161,6 +161,11 @@ header {
   white-space: nowrap;
 }
 
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .hero {
   background: #F5F5F5;
   height: 100vh;
@@ -185,7 +190,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  background: url(../img/Ellipse.png) no-repeat right;
+  background: url(../img/Ellipse\ 5\ \(1\).png) no-repeat right;
   padding: 1.5rem 0rem 3rem;
 }
 @media screen and (max-width: 768px) {
@@ -201,6 +206,11 @@ header {
   line-height: 1.1;
   margin-bottom: 1.375rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .hero__main-title {
+    margin-top: 64px;
+  }
 }
 
 .hero__description-title {
@@ -248,7 +258,7 @@ header {
     content: "";
     width: 20.1875rem;
     height: 20.1875rem;
-    background: url(../img/Ellipse.png) center center/contain no-repeat;
+    background: url(../img/Ellipse\ 5\ \(1\).png) center center/contain no-repeat;
   }
 }
 
@@ -369,6 +379,9 @@ header {
     padding: 0;
     margin-bottom: 2.6875rem;
   }
+  .benefits__item:last-child {
+    margin-bottom: 0;
+  }
 }
 .benefits__item::before {
   content: url(../img/Combined\ shape\ 2204.png);
@@ -377,6 +390,11 @@ header {
   right: 0;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
+}
+@media screen and (max-width: 768px) {
+  .benefits__item::before {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   .benefits__item::before {
@@ -522,6 +540,11 @@ header {
           flex: 1;
   margin-left: 2.5rem;
   margin-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    margin-left: 0;
+  }
 }
 
 .reviews__title {
@@ -690,7 +713,7 @@ header {
 }
 
 .order-section {
-  background: url(../img/fon.png) no-repeat center;
+  background: url(../img/cta.png) no-repeat center;
   height: 100vh;
   min-height: 40.625rem;
   width: 100%;
@@ -791,6 +814,11 @@ header {
   right: 3%;
   z-index: 100;
 }
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
 
 .fixed-menu__item {
   margin-bottom: 0.3125rem;
@@ -826,8 +854,12 @@ header {
 }
 
 .hamburger {
-  width: 24px;
-  height: 20px;
+  position: fixed;
+  top: 1.9375rem;
+  right: 2.25rem;
+  width: 26px;
+  height: 23px;
+  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -836,6 +868,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   display: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -847,7 +881,7 @@ header {
 
 .hamburger__plank {
   display: block;
-  background: #fff;
+  background: #292929;
   height: 4px;
   border-radius: 10px;
 }
