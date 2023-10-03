@@ -43,7 +43,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  font-weight: normal;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 table {
@@ -884,4 +885,126 @@ header {
   background: #292929;
   height: 4px;
   border-radius: 10px;
+}
+
+.hamburger--active .hamburger__plank:nth-child(1) {
+  opacity: 0;
+}
+
+.hamburger--active .hamburger__plank:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.hamburger--active .hamburger__plank:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateY(-8px) translateX(5px);
+          transform: rotate(-45deg) translateY(-8px) translateX(5px);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #313131;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.overlay--active {
+  opacity: 1;
+  left: 0;
+}
+
+.about-headphones__btn {
+  width: 5.6875rem;
+  height: 5.6875rem;
+  cursor: pointer;
+  background: url(./img/click.png);
+}
+
+.about-headphones__btn-specification {
+  width: 5.6875rem;
+  height: 5.6875rem;
+  cursor: pointer;
+  background: url(./img/click.png);
+}
+
+.about-headphones__title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #292929;
+}
+
+.about-headphones__text {
+  font-size: 1.125rem;
+  font-weight: 400px;
+  color: #666666;
+}
+
+.about-headphones__property-charge, .about-headphones__property-weight {
+  width: 104px;
+  height: 44px;
+}
+
+.about-headphones__property {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-headphones__order-price {
+  font-size: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1.125rem 2.5625rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 6.25rem;
+  background: #E01F3D;
+  color: white;
+  border: none;
+}
+
+.button--theme-transparent {
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.headphones-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-headphones {
+  width: 50%;
+}
+
+.slider-section {
+  background: #F5F5F5;
+  height: 100vh;
+  min-height: 40.625rem;
 }

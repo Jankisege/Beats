@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1 ">
   
   <title>Beats</title>
-  
+  <script>src="./overlay.js"</script>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -138,6 +138,45 @@
           </ul>
         </div> 
       </section>
+      <section class="section slider-section">
+        <div class="container slider__container">
+          <ul class="section slider-section__list">
+            <li class="slider-section__item">
+              <button class="slider-section__slide"></button>
+              <div class="headphones-info">
+                <div class="headphones-img">
+                  <img src="./img/Ellipse 6.png" alt="" class="headphones-icon">
+                </div>
+                <div class="about-headphones">
+                  <div class="about-headphones__btn">
+                    <button class="about-headphones__btn-specification"></button>
+                  </div>
+                  <div class="about-headphones__title">
+                    <h2>Beats solo 3. Цвет «Атласное серебро»</h2>
+                  </div>
+                  <div class="about-headphones__subtitle">
+                    <div class="about-headphones__text">
+                      <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+                    </div>
+                    <div class="about-headphones__property">
+                      <div class="about-headphones__property-charge">Зарядка 2 часа</div>
+                      <div class="about-headphones__property-weight">Вес 215 грамм</div>
+                    </div>
+                    <div class="about-headphones__order">
+                      <div class="about-headphones__order-price">
+                        <div class="about-headphones__order-price__value">14 490</div>
+                        <div class="about-headphones__order-price__curency">₽</div>
+                      </div>
+                      <button class="button">Заказать</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="slider-section__slide"></button>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
@@ -266,10 +305,39 @@
       <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
-  <a href="" class="hamburger">
+  <a href="" class="hamburger" id="hamburger">
     <span class="hamburger__plank"></span>
     <span class="hamburger__plank"></span>
     <span class="hamburger__plank"></span>
   </a>
+  <div class="overlay" id="overlay">
+    <div class="overlay__menu" id="overlay__menu">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="" class="menu__link">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Наушники</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Команда</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Цвета</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Как мы работаем</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </body>
 </html>

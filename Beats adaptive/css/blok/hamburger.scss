@@ -22,3 +22,14 @@
   border-radius: 10px;
 }
 
+.hamburger--active .hamburger__plank:nth-child(1) {
+  opacity: (0);
+}
+
+.hamburger--active  .hamburger__plank:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger--active  .hamburger__plank:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px) translateX(5px);
+}

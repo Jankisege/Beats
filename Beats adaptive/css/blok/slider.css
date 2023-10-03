@@ -1,0 +1,35 @@
+.about-headphones__btn {
+  width: rem(91px);
+  height: rem(91px);
+  cursor: pointer;
+  background: url(./img/click.png);
+}
+
+.about-headphones__btn-specification {
+  width: rem(91px);
+  height: rem(91px);
+  cursor: pointer;
+  background: url(./img/click.png);
+}
+
+.about-headphones__title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.about-headphones__text {
+  font-size: 18px;
+  font-weight: 400px;
+  color: #666666;
+}
+
+.about-headphones__property-charge, .about-headphones__property-weight {
+  width: 104px;
+  height: 44px;
+}
+
+.about-headphones__property {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
