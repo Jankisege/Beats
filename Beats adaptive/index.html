@@ -183,12 +183,67 @@
           </ul>
         </div>
       </section>
+      <section class="team-section">
+        <div class="container">
+          <div class="section__title">Команда</div>
+          <ul class="team team--version--desktop">
+           <li class="team__item">
+            <div class="team__member">
+              <img src="../img/boris.png" alt="team__member" class="team__member-pic">
+            </div>
+            <button class="team__title" type="button">Борис Федоровчи</button>
+            <div class="team__content">
+              <div class="team__content-block">
+                <div class="team__occ">Главный технолог</div>
+                <div class="team__content__text">Отвечает за вкусовые качества и калорийность.</div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="team__member">
+              <img src="../img/alla.png" alt="team__member" class="team__member-pic">
+            </div>
+            <button class="team__title" type="button">Алла Иванова</button>
+            <div class="team__content">
+              <div class="team__content-block">
+                <div class="team__occ">Специалист по упаковке</div>
+                <div class="team__content__text">Автор запоминающегося стиля наших батончиков.</div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="team__member">
+              <img src="../img/kirill.png" alt="team__member" class="team__member-pic">
+            </div>
+            <button class="team__title" type="button">Кирилл Матросов</button>
+            <div class="team__content">
+              <div class="team__content-block">
+                <div class="team__occ">Оператор</div>
+                <div class="team__content__text">Разработал дизайн наушников beats solo 3.</div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="team__member">
+              <img src="../img/mila.png" alt="team__member" class="team__member-pic">
+            </div>
+            <button class="team__title" type="button">Мила Рыжкова</button>
+            <div class="team__content">
+              <div class="team__content-block">
+                <div class="team__occ">PR, маркетинг</div>
+                <div class="team__content__text">По всем вопросам сотрудничества писать только Миле.</div>
+              </div>
+            </div>
+          </li>
+          </ul>
+        </div>
+      </section>
       <section class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
             <ul class="reviews__list">
-              <li class="reviews__item">
+              <li class="reviews__item active" data-linked-with="one">
                 <div class="reviews__display">
                   <div class="reviews__display-inner">
                     <div class="reviews__avatar">
@@ -204,7 +259,7 @@
                   </div>
                 </div>
               </li>
-              <li class="reviews__item">
+              <li class="reviews__item" data-linked-with="two">
                 <div class="reviews__display">
                   <div class="reviews__display-inner">
                     <div class="reviews__avatar">
@@ -220,7 +275,7 @@
                   </div>
                 </div>
               </li>
-              <li class="reviews__item">
+              <li class="reviews__item" data-linked-with="three">
                 <div class="reviews__display">
                   <div class="reviews__display-inner">
                     <div class="reviews__avatar">
@@ -239,17 +294,17 @@
             </ul>
             <ul class="reviews__switcher">
               <li class="reviews__switcher-item interactive__avatar interactive__avatar--active">
-                <a href="" class="interactive__avatar-link">
+                <a href="" class="interactive__avatar-link" data-open="one">
                   <img src="./img/Rectangle 5 (4).png" alt="" class="interactive__avatar-img">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive__avatar">
-                <a href="" class="interactive__avatar-link">
+                <a href="" class="interactive__avatar-link"  data-open="two">
                   <img src="./img/Rectangle 5 (3).png" alt="" class="interactive__avatar-img">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive__avatar">
-                <a href="" class="interactive__avatar-link">
+                <a href="" class="interactive__avatar-link"  data-open="three">
                   <img src="./img/Rectangle 5 (2).png" alt="" class="interactive__avatar-img">
                 </a>
               </li>
@@ -381,7 +436,9 @@
       </nav>
     </div>
   </div>
-  <script>src="../overlay.js"</script>
-  <script>src="../tabs.js"</script>
+  <script src="../overlay.js"></script>
+  <script src="../tabs.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  
 </body>
 </html>

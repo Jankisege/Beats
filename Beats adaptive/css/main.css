@@ -567,6 +567,28 @@ header {
   color: #292929;
 }
 
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.reviews__item .active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.reviews__list {
+  position: relative;
+  min-height: 280px;
+}
+
 .interactive__avatar {
   width: 4.625rem;
   height: 4.625rem;
@@ -932,14 +954,7 @@ header {
   width: 5.6875rem;
   height: 5.6875rem;
   cursor: pointer;
-  background: url(./img/click.png);
-}
-
-.about-headphones__btn-specification {
-  width: 5.6875rem;
-  height: 5.6875rem;
-  cursor: pointer;
-  background: url(./img/click.png);
+  background: url(../img/click.png);
 }
 
 .about-headphones__title {
@@ -1066,6 +1081,6 @@ header {
   left: 0;
 }
 
-.slider-section {
+.slider-section__item {
   position: relative;
 }

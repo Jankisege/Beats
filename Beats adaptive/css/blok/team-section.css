@@ -1,0 +1,29 @@
+.team-section {
+  background: #F5F5F5;
+  height: 100vh;
+  min-height: rem(650px);
+}
+
+.team--version--desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team__member-pic {
+  width: 220px;
+  height: 290px;
+}
+
+.team__title {
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.team__content {
+  height: 0;
+}
